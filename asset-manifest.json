@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/activity-coach/static/css/main.ee7bc358.chunk.css",
+    "main.js": "/activity-coach/static/js/main.f0f8ea8a.chunk.js",
+    "main.js.map": "/activity-coach/static/js/main.f0f8ea8a.chunk.js.map",
+    "runtime-main.js": "/activity-coach/static/js/runtime-main.eae3f5bc.js",
+    "runtime-main.js.map": "/activity-coach/static/js/runtime-main.eae3f5bc.js.map",
+    "static/js/2.c9ea91aa.chunk.js": "/activity-coach/static/js/2.c9ea91aa.chunk.js",
+    "static/js/2.c9ea91aa.chunk.js.map": "/activity-coach/static/js/2.c9ea91aa.chunk.js.map",
+    "index.html": "/activity-coach/index.html",
+    "static/css/main.ee7bc358.chunk.css.map": "/activity-coach/static/css/main.ee7bc358.chunk.css.map",
+    "static/js/2.c9ea91aa.chunk.js.LICENSE.txt": "/activity-coach/static/js/2.c9ea91aa.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.eae3f5bc.js",
+    "static/js/2.c9ea91aa.chunk.js",
+    "static/css/main.ee7bc358.chunk.css",
+    "static/js/main.f0f8ea8a.chunk.js"
+  ]
+}
