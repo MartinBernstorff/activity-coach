@@ -42,9 +42,11 @@ export default function TaskList(props) {
                         key={record.id}
                         id={record.id}
                         endorsed={record.fields.Promotion}
-                        notes={record.fields.["Learning points"]}
+                        notes={record.fields["Learning points"]}
                         what_id={record.fields["What?"]}
                         rating={record.fields["T Well Spent?"]}
+                        group={record.fields["Group #"]}
+                        duration={record.fields["Rough time spent (mins)"]}
                     />
                 ))
             ) : (

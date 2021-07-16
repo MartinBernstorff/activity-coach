@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
-import ActivityList from './components/ActivityList'
 import RateToday from './components/RateToday';
+import TaskListMorning from './components/TaskListMorning'
+import TaskListAfternoon from './components/TaskListAfternoon'
+import TaskListEvening from './components/TaskListEvening'
+import TaskListNone from './components/TaskListNone';
 
 function App(props) {
   const [run, reRun] = useState({});
@@ -10,9 +13,19 @@ function App(props) {
 
   return (
     <div className="grid mx-auto max-w-5xl">
-      <div className="grid place-items-center">
+      <div className="grid m-2">
         <RateToday />
-        <ActivityList 
+
+        <TaskListNone
+          reRun={reRun}
+        />
+        <TaskListMorning 
+          reRun={reRun}
+        />
+        <TaskListAfternoon
+          reRun={reRun}
+        />
+        <TaskListEvening
           reRun={reRun}
         />
 

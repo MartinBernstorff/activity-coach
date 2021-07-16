@@ -1,9 +1,12 @@
-import React, {Component, useState, useEffect} from "react";
+import React, {Component} from "react";
 import Airtable from 'airtable-node'
 
 const Log = new Airtable({apiKey: 'keywMvCl7aRV4a5af'})
     .base('appMcSmdPtPWcBhIX')
     .table('Log')
+
+const today = new Date();
+const today_string = today.toISOString().substring(0, 10);
 
 class RateToday extends Component {
     constructor(props) {
@@ -36,10 +39,12 @@ class RateToday extends Component {
         this.setState({value: val})
 
         for (let i = 0; i < this.state.activities.length; i++) {
-            Log.update(this.state.activities[i].id, {"T Well Spent?": val.toString()}).then(resp => {
-                console.log("Rating " + this.state.activities[i].id + " a " + val)
-                console.log(resp)
-            })
+            if (this.state.activities[i].fields.["exec-date"] !== today_string) {
+                Log.update(this.state.activities[i].id, {"T Well Spent?": val.toString()}).then(resp => {
+                    console.log("Rating " + this.state.activities[i].id + " a " + val)
+                    console.log(resp)
+                })
+            }
         }
     }
     
